@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore India | States & UTs</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>🇮🇳 States & Union Territories of India</h1>
+            <p>Discover population, literacy, and area details</p>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search state or UT..." onkeyup="filterStates()">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="statesGrid" class="grid">
+            <!-- Cards will be injected here by JS -->
+        </div>
+    </main>
+
+    <!-- Modal for Details -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modalBody">
+                <!-- Detailed info will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
